@@ -406,5 +406,72 @@ footer {
     height: 70%;
     /* increases the carousel height so it looks good on phones */ } }
 
-body h1 {
-  color: white; }
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align: left; }
+  body h1 {
+    color: white; }
+  body h2 {
+    text-align: center; }
+    body h2 p {
+      text-align: center; }
+  body p {
+    padding: 5px; }
+  body a {
+    text-decoration: none;
+    color: gray;
+    padding: 15px; }
+  body ul {
+    display: inline; }
+
+.div.section.lead {
+  margin-left: auto;
+  margin-right: auto; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  clear: both; }
+
+.row {
+  clear: both; }
+
+.img {
+  width: 100%; }
+
+.col-lg-12 {
+  width: 100%; }
+
+.col-lg-4 {
+  width: 33%;
+  display: inline-block;
+  border: 2px; }
+
+.col-lg-6 {
+  width: 50%;
+  display: inline-block;
+  float: left; }
+
+.navbar-header {
+  background: black;
+  color: gray;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.navbar-brand {
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  color: gray; }
+
+.img-home-portfolio, .img-customer, .portfolio-item {
+  max-width: 500px; }
+
+.section {
+  display: block;
+  clear: both; }
+
+section, .section-colored, .text-center {
+  padding: 50px 0;
+  text-align: center; }
