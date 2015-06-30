@@ -1,5 +1,7 @@
 @import "normalize";
 @import "modern-business";
+
+
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: left;
@@ -25,21 +27,23 @@ body {
   }
 }
 
+
+
+* {
+  box-sizing: border-box;
+}
+
 div, .section, .lead {
 	width: 100%;
   padding: 0;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  clear: both;
 }
 
 .row {
   clear: both;
   overflow: auto;
   padding-bottom: 50px;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .img {
@@ -51,12 +55,15 @@ div, .section, .lead {
 }
 
 .col-lg-4 {
-	width: 33%;
+	width: 31vw;
 	display: inline-block;
-	border: 2px;
-  margin-left: auto;
-  margin-right: auto;
   vertical-align: text-top;
+  margin: 1vw;
+}
+
+.form-group.col-lg-4 {
+  width: 30%;
+  margin: 0px;
 }
 
 .col-lg-6 {
@@ -193,7 +200,7 @@ iframe{
 }
 
 small{
-  color: grey;
+  color: gray;
   font-size: 14pt;
 }
 
@@ -235,3 +242,4 @@ textarea{
 .icon-2x {
   color: #337ab7;
 }
+@import "mediaQueries";
