@@ -3,28 +3,32 @@
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: left;
-    h1 {
+  h1 {
     color: white;
   }
-   h2 {
-   	text-align: center;
-   	  p{
-   	  	text-align: center;
-   	  }
-   }
-  	p{
-  		padding: 5px 
-  	}
-  	a {
-  		text-decoration: none;
-  		color: gray;
-  		padding: 15px
-  	}
+  
+  h2 {
+    text-align: center;
+    
+    p{
+     text-align: center;
+    }
+
+  }
+
+  p{
+    padding: 5px 
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+    padding: 15px
+  }
 }
 
-.div.section.lead {
-	margin-left: auto;
-    margin-right: auto;
+div, .section, .lead {
+	width: 100%;
+  padding: 0;
 }
 
 .container {
@@ -35,6 +39,8 @@ body {
 
 .row {
   clear: both;
+  overflow: auto;
+  padding-bottom: 50px;
 }
 
 .img {
@@ -49,12 +55,30 @@ body {
 	width: 33%;
 	display: inline-block;
 	border: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: text-top;
 }
 
 .col-lg-6 {
-	width: 50%;
-	display: inline-block;
-	float: left
+	width: 45%;
+	display: inline;
+  float: left;
+  text-align: left;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  h2{
+    text-align: left;
+  }
+  .img-responsive {
+    display: inline;
+  }
+}
+
+.navbar-fixed-top{
+  top: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .navbar-header {
@@ -62,10 +86,13 @@ body {
 	color: gray;
 	padding-top: 15px;
 	padding-bottom: 15px;
+  float: left;
+    a:hover {
+      color: white;
+  }
 }
 
 .navbar-brand {
-	text-decoration: none;
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-bottom: 10px;
@@ -73,7 +100,15 @@ body {
 }
 
 .img-home-portfolio, .img-customer, .portfolio-item {
-  max-width: 500px
+  max-width: 100%
+}
+
+.img-responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
 }
 
 .section {
@@ -82,9 +117,11 @@ body {
 }
 
 section, .section-colored, .text-center {
-  padding: 50px 0;
   text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 0;
 }
+
 
 
  

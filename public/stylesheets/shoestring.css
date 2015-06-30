@@ -421,12 +421,10 @@ body {
     text-decoration: none;
     color: gray;
     padding: 15px; }
-  body ul {
-    display: inline; }
 
-.div.section.lead {
-  margin-left: auto;
-  margin-right: auto; }
+div, .section, .lead {
+  width: 100%;
+  padding: 0; }
 
 .container {
   margin-left: auto;
@@ -434,7 +432,9 @@ body {
   clear: both; }
 
 .row {
-  clear: both; }
+  clear: both;
+  overflow: auto;
+  padding-bottom: 50px; }
 
 .img {
   width: 100%; }
@@ -445,33 +445,57 @@ body {
 .col-lg-4 {
   width: 33%;
   display: inline-block;
-  border: 2px; }
+  border: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: text-top; }
 
 .col-lg-6 {
-  width: 50%;
-  display: inline-block;
-  float: left; }
+  width: 45%;
+  display: inline;
+  float: left;
+  text-align: left;
+  margin-right: 2.5%;
+  margin-left: 2.5%; }
+  .col-lg-6 h2 {
+    text-align: left; }
+  .col-lg-6 .img-responsive {
+    display: inline; }
+
+.navbar-fixed-top {
+  top: 0;
+  position: absolute;
+  width: 100%; }
 
 .navbar-header {
   background: black;
   color: gray;
   padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  float: left; }
+  .navbar-header a:hover {
+    color: white; }
 
 .navbar-brand {
-  text-decoration: none;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
   color: gray; }
 
 .img-home-portfolio, .img-customer, .portfolio-item {
-  max-width: 500px; }
+  max-width: 100%; }
+
+.img-responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
 
 .section {
   display: block;
   clear: both; }
 
 section, .section-colored, .text-center {
-  padding: 50px 0;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 0; }
