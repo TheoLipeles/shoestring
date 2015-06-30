@@ -410,7 +410,7 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: left; }
   body h1 {
-    color: white; }
+    color: black; }
   body h2 {
     text-align: center; }
     body h2 p {
@@ -419,7 +419,6 @@ body {
     padding: 5px; }
   body a {
     text-decoration: none;
-    color: gray;
     padding: 15px; }
 
 div, .section, .lead {
@@ -462,17 +461,47 @@ div, .section, .lead {
   .col-lg-6 .img-responsive {
     display: inline; }
 
+.col-sm-8 {
+  width: 55%;
+  margin-left: 5%;
+  display: inline-block;
+  float: left; }
+
+.col-sm-4 {
+  width: 28%;
+  margin-right: 5%;
+  display: inline-block;
+  float: right; }
+  .col-sm-4 ul {
+    list-style: none; }
+    .col-sm-4 ul li {
+      display: inline; }
+
+.navbar {
+  min-height: 50px; }
+
+.navbar li a {
+  color: gray; }
+.navbar li a:hover {
+  color: white; }
+
+.navbar-right {
+  float: right !important;
+  list-style: none; }
+
 .navbar-fixed-top {
+  background: black;
   top: 0;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  overflow: auto; }
 
 .navbar-header {
-  background: black;
   color: gray;
   padding-top: 15px;
   padding-bottom: 15px;
-  float: left; }
+  float: left;
+  width: 50%; }
   .navbar-header a:hover {
     color: white; }
 
@@ -499,3 +528,64 @@ section, .section-colored, .text-center {
   text-align: center;
   margin-bottom: 50px;
   padding-bottom: 0; }
+
+.breadcrumb {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background: #e1e1e1; }
+  .breadcrumb li {
+    display: inline; }
+    .breadcrumb li a {
+      padding-right: 0; }
+  .breadcrumb li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0"; }
+
+iframe {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.page-header {
+  margin-left: 5%; }
+
+small {
+  color: grey;
+  font-size: 14pt; }
+
+button {
+  border-radius: 5px;
+  background: #3F90D7;
+  border-color: #2e6da4;
+  border: none;
+  color: white;
+  padding: 5px;
+  font-weight: 200; }
+
+.clearfix {
+  overflow: auto; }
+
+.form-group > label {
+  font-weight: bold; }
+
+input {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-right: 5%;
+  border-radius: 5px;
+  width: 95%; }
+
+textarea {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-right: 5%;
+  border-radius: 5px;
+  width: 95%; }
+
+.icon-2x {
+  color: #337ab7; }

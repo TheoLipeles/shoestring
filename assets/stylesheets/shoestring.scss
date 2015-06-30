@@ -4,7 +4,7 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: left;
   h1 {
-    color: white;
+    color: black;
   }
   
   h2 {
@@ -21,7 +21,6 @@ body {
   }
   a {
     text-decoration: none;
-    color: gray;
     padding: 15px
   }
 }
@@ -75,18 +74,58 @@ div, .section, .lead {
   }
 }
 
+.col-sm-8 {
+  width: 55%;
+  margin-left: 5%;
+  display: inline-block;
+  float: left;
+}
+
+.col-sm-4 {
+  width: 28%;
+  margin-right: 5%;
+  display: inline-block;
+  float: right;
+    ul{
+      list-style: none;
+      li {
+          display: inline;
+      }
+    }
+}
+
+.navbar{
+  min-height: 50px;
+}
+
+.navbar li {
+  a {
+    color: gray;
+  }
+  a:hover{
+    color: white;
+  }
+}
+.navbar-right {
+  float: right!important;
+  list-style: none;
+
+}
+
 .navbar-fixed-top{
+  background: black;
   top: 0;
   position: absolute;
   width: 100%;
+  overflow: auto;
 }
 
 .navbar-header {
-	background: black;
 	color: gray;
 	padding-top: 15px;
 	padding-bottom: 15px;
   float: left;
+  width: 50%;
     a:hover {
       color: white;
   }
@@ -122,6 +161,77 @@ section, .section-colored, .text-center {
   padding-bottom: 0;
 }
 
+.breadcrumb {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background: #e1e1e1;
+  li{
+      display: inline;
+      a {
+        padding-right: 0;
+      }
+    }
+  li+li:before{
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+  }
+}
+
+iframe{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.page-header {
+  margin-left: 5%;
+}
+
+small{
+  color: grey;
+  font-size: 14pt;
+}
 
 
- 
+button {
+  border-radius: 5px;
+  background: #3F90D7;
+  border-color: #2e6da4;
+  border: none;
+  color: white;
+  padding: 5px;
+  font-weight: 200;
+}
+
+.clearfix{
+  overflow: auto;
+} 
+
+.form-group > label {
+  font-weight: bold;
+}
+
+input{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-right: 5%;
+  border-radius: 5px;
+  width: 95%;
+}
+
+textarea{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-right: 5%;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.icon-2x {
+  color: #337ab7;
+}
